@@ -136,4 +136,17 @@
 
     <script src="app.js"></script>
   </body>
+  <div id="announcement-banner" class="announcement-banner"></div>
+  <script>
+    (function () {
+      // Configuration constant for the announcement banner text
+      var ANNOUNCEMENT_BANNER_MESSAGE =
+        "📢 Activity registration is open until the end of the month. Don't lose your spot!";
+
+      var bannerElement = document.getElementById("announcement-banner");
+      if (bannerElement) {
+        bannerElement.textContent = ANNOUNCEMENT_BANNER_MESSAGE;
+      }
+    })();
+  </script>
 </html>
